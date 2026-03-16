@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    font-family: Arial;
+    text-align:center;
+    background: linear-gradient(45deg,#ffb6c1,#fff3b0,#d8b4ff);
+}
+
+/* MENU */
+nav{
+    background:#6b3e26;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* TITULO */
+.titulo{
+    font-size:60px;
+    color:#6b3e26;
+    animation: brilho 3s infinite alternate;
+}
+
+@keyframes brilho{
+    from{color:#6b3e26;}
+    to{color:#ff69b4;}
+}
+
+/* TEXTO ANIMADO */
+.texto{
+    font-size:28px;
+    animation: subir 3s infinite alternate;
+}
+
+@keyframes subir{
+    from{transform:translateY(0);}
+    to{transform:translateY(-10px);}
+}
+
+/* IMAGENS */
+img{
+    width:250px;
+    margin:20px;
+    transition:0.5s;
+}
+
+img:hover{
+    transform:scale(1.2) rotate(5deg);
+}
+
+/* DECORAÇÕES */
+.canto1{
+    position:fixed;
+    top:10px;
+    left:10px;
+    width:100px;
+}
+
+.canto2{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    width:100px;
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:#6b3e26;
+    color:white;
+}
